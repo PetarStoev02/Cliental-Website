@@ -1,12 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import * as ROUTES from "./common/routes";
-import { lazy } from "react";
+import {Route, Routes} from 'react-router-dom';
+import * as ROUTES from './common/routes';
+import {lazy} from 'react';
+import React from 'react';
 
 
-import Layout from "./components/Layout/Layout";
-const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
+import Layout from './components/Layout/Layout';
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 
-function App() {
+const App=() =>{
   return (
     <>
       <Layout>
@@ -17,6 +18,6 @@ function App() {
       </Layout>
     </>
   );
-}
+};
 
 export default App;
