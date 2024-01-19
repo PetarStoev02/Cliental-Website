@@ -1,10 +1,12 @@
 import './HomePage.css';
 import React from 'react';
+import HeroSection from './sections/HeroSection';
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <HeroSection/>
+    </>
   );
 };
 

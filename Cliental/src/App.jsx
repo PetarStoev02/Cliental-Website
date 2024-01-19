@@ -15,7 +15,6 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path={ROUTES.HOME_PAGE} element={<HomePage />} />
-          <Route path={ROUTES.HOME_PAGE_Test} element={<HomePage />} />
         </Routes>
       </Layout>
     </>
