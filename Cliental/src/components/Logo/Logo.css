@@ -3,3 +3,9 @@
     height: 150px;
     margin: 0 50px;
 }
+@media screen and (max-width: 960px) {
+    .logo-wrapper svg{
+        width: 150px;
+        height: 80px;
+    }
+}
