@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  font-family: Inter;
+  font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background-color:#EDF2F7;
+  background-color:#292929 ;
 }
 
 * {
