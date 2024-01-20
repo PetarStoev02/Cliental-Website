@@ -1,7 +1,8 @@
-import "./HeroSection.css";
-import React from "react";
-import videoBG from "../../../assets/videoBg.mp4";
-import ContactButton from "../../../components/ContactButton/ContactButton";
+import './HeroSection.css';
+import React from 'react';
+import videoBG from '../../../../assets/videoBg.mp4';
+import {NavLink} from 'react-router-dom';
+import * as ROUTES from '../../../../common/routes';
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,11 @@ const HeroSection = () => {
           </h2>
         </div>
 
-        <ContactButton />
+        <NavLink style={{textDecoration: 'none'}} to={ROUTES.CONTACTS_PAGE}>
+          <div className="hero-button-wrapper">
+            <p>БЕЗПЛАТНА КОНСУЛТАЦИЯ</p>
+          </div>
+        </NavLink>
       </div>
     </div>
   );
