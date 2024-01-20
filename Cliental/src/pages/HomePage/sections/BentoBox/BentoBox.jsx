@@ -1,15 +1,17 @@
 import './BentoBox.css';
 import React from 'react';
-import ContactButton from '../../../../components/ContactButton/ContactButton';
+import Box from '../../../../components/Box/Box';
+import {SERVICES_TYPES} from '../../../../common/constants';
 
 const BentoBox = () => {
+  const services = SERVICES_TYPES;
   return (
     <div className="bento-box">
-      <div className="grid-item-1">1</div>
-      <div className="grid-item-2">2</div>
-      <div className="grid-item-3">3</div>
-      <div className="grid-item-4">4</div>
-      <div className="grid-item-5">5</div>
+      {services.map((service) => (
+        <div key={service.id} className={`grid-item-${service.id}`}>
+          <Box service={service}/>
+        </div>
+      ))}
     </div>
   );
 };

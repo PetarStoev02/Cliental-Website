@@ -1,5 +1,12 @@
 import './HeroSection.css';
 import React from 'react';
+import Logo1 from '../../../../assets/Logo 1.png';
+import Logo2 from '../../../../assets/Logo 2.png';
+import Logo3 from '../../../../assets/Logo 3.jpg';
+import Logo4 from '../../../../assets/Logo 4.jpg';
+import Logo5 from '../../../../assets/Logo 5.png';
+import Logo6 from '../../../../assets/Logo 6.png';
+
 import videoBG from '../../../../assets/videoBg.mp4';
 import {NavLink} from 'react-router-dom';
 import * as ROUTES from '../../../../common/routes';
@@ -25,6 +32,21 @@ const HeroSection = () => {
             <p>БЕЗПЛАТНА КОНСУЛТАЦИЯ</p>
           </div>
         </NavLink>
+
+        <div className="clients">
+          <div className="logo-container">
+            <img src={Logo1} alt="Logo 1" />
+            <img src={Logo2} alt="Logo 2" />
+            <img src={Logo3} alt="Logo 3" />
+            <img src={Logo4} alt="Logo 4" />
+            <img src={Logo5} alt="Logo 5" />
+            <img src={Logo6} alt="Logo 6" />
+          </div>
+          <div className="achievements">
+            <h1>10М+</h1>
+            <p>генерирани <br/> гледания</p>
+          </div>
+        </div>
       </div>
     </div>
   );

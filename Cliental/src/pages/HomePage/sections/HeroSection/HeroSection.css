@@ -18,7 +18,8 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    gap: 50px;
+    padding: 100px 0 0 0;
+    gap:50px;
 }
 
 .text{
@@ -26,17 +27,18 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
 }
 
 .text h1{
     color: #FFF;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
     text-align: center;
     font-family: Montserrat;
-    font-size: 60px;
+    font-size: 70px;
     font-style: normal;
-    font-weight: 800;
-    line-height: 100%;
+    font-weight: 900;
+    line-height: 100%; /* 80px */
     user-select: none;
 }
 
@@ -54,11 +56,13 @@
 
 span{
     color: #316B9D;
+    -webkit-text-stroke: 2px #316B9D;
     font-family: Montserrat;
     font-size: 60px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 100%;
+    text-transform: uppercase;
     text-transform: uppercase;
     user-select: none;
 }
@@ -87,6 +91,56 @@ span{
     transform: scale(1.1);
     background-color: #ffffff;
     color: #316B9D;
+}
+
+.clients{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 30px;
+}
+.logo-container{
+    justify-content: center;
+    align-items: center;
+}
+.logo-container img{
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    object-fit: scale-down;
+    margin: 0 -10px 0 0;
+}
+
+.achievements{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+}
+
+.achievements h1{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; 
+}
+
+.achievements p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
 
@@ -130,13 +184,13 @@ video{
     }
     .text{
         gap: 30px;
-        padding: 0 30px;
+        padding: 0 15px;
     }
     .text h1, span{
-        font-size: 30px;
+        font-size: 40px;
     }
     
     .text h2{
-        font-size: 16px;
+        font-size: 18px;
     }
   }
