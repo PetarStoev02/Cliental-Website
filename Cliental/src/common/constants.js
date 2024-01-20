@@ -17,16 +17,10 @@ export const SERVICES_TYPES = [
     imageUrl: 'https://prod.spline.design/958ilekNGRKPIjw5/scene.splinecode',
   },
   {
-    id: 5,
+    id: 3,
     name: 'Уебсайт и SEO',
     route: 'website-services',
     imageUrl: 'https://prod.spline.design/dRWxUQs3TqCJA6px/scene.splinecode',
-  },
-  {
-    id: 3,
-    name: 'Запазете 15-минутна консултация',
-    route: 'graphic-design-services',
-    imageUrl: 'https://',
   },
   {
     id: 4,
