@@ -14,7 +14,7 @@ import * as ROUTES from '../../../../common/routes';
 const HeroSection = () => {
   return (
     <div className="hero-wraper">
-      <video src={videoBG} autoPlay loop muted />
+      <video src={videoBG} autoPlay loop muted preload="auto" />
       <div className="content">
         <div className="text">
           <h1>
@@ -35,12 +35,12 @@ const HeroSection = () => {
 
         <div className="clients">
           <div className="logo-container">
-            <img src={Logo1} alt="Logo 1" />
-            <img src={Logo2} alt="Logo 2" />
-            <img src={Logo3} alt="Logo 3" />
-            <img src={Logo4} alt="Logo 4" />
-            <img src={Logo5} alt="Logo 5" />
-            <img src={Logo6} alt="Logo 6" />
+            <img src={Logo1} alt="Logo 1" loading="lazy"/>
+            <img src={Logo2} alt="Logo 2" loading="lazy"/>
+            <img src={Logo3} alt="Logo 3" loading="lazy"/>
+            <img src={Logo4} alt="Logo 4" loading="lazy"/>
+            <img src={Logo5} alt="Logo 5" loading="lazy"/>
+            <img src={Logo6} alt="Logo 6" loading="lazy"/>
           </div>
           <div className="achievements">
             <h1>10М+</h1>

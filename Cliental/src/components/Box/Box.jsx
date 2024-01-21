@@ -1,9 +1,17 @@
 import {NavLink} from 'react-router-dom';
 import Spline from '@splinetool/react-spline';
-import React, {Suspense} from 'react';
+import React, {Suspense, useRef} from 'react';
 import './Box.css';
 
+
 const Box = ({service: {id, route, name, imageUrl}}) => {
+  const spline = useRef();
+
+  const onLoad=(splineApp) =>{
+    // save the app in a ref for later use
+    spline.current = splineApp;
+  };
+
   return (
     <div className="box-wrapper">
       <NavLink style={{textDecoration: 'none'}} to={`/services/${route}`}>
@@ -26,7 +34,7 @@ const Box = ({service: {id, route, name, imageUrl}}) => {
         </div>
       </NavLink>
       <Suspense fallback={<div>Loading...</div>}>
-        <Spline className="object-3d" scene={imageUrl} />
+        <Spline className="object-3d" scene={imageUrl} onLoad={onLoad}/>
       </Suspense>
     </div>
   );
