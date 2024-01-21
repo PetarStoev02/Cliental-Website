@@ -14,13 +14,13 @@ export const SERVICES_TYPES = [
     id: 2,
     name: 'Професионална фотография ',
     route: 'photography-services',
-    imageUrl: 'https://prod.spline.design/958ilekNGRKPIjw5/scene.splinecode',
+    imageUrl: 'https://prod.spline.design/LepBWpXFYOLtWgZg/scene.splinecode',
   },
   {
     id: 3,
     name: 'Уебсайт и SEO',
     route: 'website-services',
-    imageUrl: 'https://prod.spline.design/dRWxUQs3TqCJA6px/scene.splinecode',
+    imageUrl: 'https://prod.spline.design/AUtuMg1EDPdSsCji/scene.splinecode',
   },
   {
     id: 4,
