@@ -111,9 +111,13 @@
   
   /* Small screens */
   @media (max-width: 700px) {
+    .bento-box{
+      padding: 0;
+    }
     .bento-wrapper{
       height: 100%;
       width: 100%;
+      padding: 0;
   }
     .grid-item {
       max-width: 300px;

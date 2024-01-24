@@ -56,6 +56,7 @@
         transform: translate(-200%, 80%);
         font-size: 2rem;
         cursor: pointer;
+
       }
 
       .nav-menu {
@@ -65,16 +66,20 @@
         height: 90vh;
         position: absolute;
         top: 100px;
-        right: -100%;
         opacity: 1;
-        transition: all 0.5s ease;
+       
+        visibility: hidden;
       }
     
       .nav-menu.active {
+        visibility:unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: #ffffff;
         right: 0;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
         z-index: 1;
       }
     

@@ -14,7 +14,7 @@ import * as ROUTES from '../../../../common/routes';
 const HeroSection = () => {
   return (
     <div className="hero-wraper">
-      <video src={videoBG} autoPlay loop muted preload="auto" />
+      <video src={videoBG} autoPlay loop muted preload="auto" playsInline />
       <div className="content">
         <div className="text">
           <h1>

@@ -178,19 +178,17 @@ video{
 }
 
 @media screen and (max-width: 600px) {
-    .hero-wraper{
-        margin: 0 0 5rem 0;
-        
-    }
+    
     .text{
-        gap: 30px;
-        padding: 0 15px;
+        gap: 25px;
+        padding: 0;
     }
-    .text h1, span{
-        font-size: 40px;
+    .text h1,.text span{
+        font-size: 1.7em;
+        padding: 0;
     }
     
     .text h2{
-        font-size: 18px;
+        font-size: 1em;
     }
   }
