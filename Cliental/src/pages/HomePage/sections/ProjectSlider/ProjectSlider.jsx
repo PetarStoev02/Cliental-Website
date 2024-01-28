@@ -4,8 +4,8 @@ import "./ProjectSlider.css"
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import ProjectCard from "../ProjectCard/ProjectCard";
-import { PROJECTS } from "../../common/constants";
+import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
+import { PROJECTS } from "../../../../common/constants";
 
 const ProjectSlider = () => {
   const chunkProjects = (projects, size) => {

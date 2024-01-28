@@ -85,10 +85,6 @@
     display: none !important;
 }
 
-@media (max-width:960px) {
- 
-   
-}
 
 @media (max-width: 700px) {
     .swiper-slide > * { /* Targeting all direct children of .swiper-slide */

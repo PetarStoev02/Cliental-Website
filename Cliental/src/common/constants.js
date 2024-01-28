@@ -76,3 +76,21 @@ export const PROJECTS = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend lacus id lectus accumsan, laoreet condimentum purus ornare. Cras vitae pellentesque lacus. Sed mollis dignissim metus, ut auctor nibh suscipit eget. ",
   },
 ];
+
+export const REVIEWS = [
+  {
+    img: "",
+    title: "Reviews - 1",
+    text: "",
+  },
+  {
+    img: "",
+    title: "Reviews - 2",
+    text: "",
+  },
+  {
+    img: "",
+    title: "Reviews - 3",
+    text: "",
+  },
+];

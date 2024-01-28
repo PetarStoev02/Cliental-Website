@@ -3,8 +3,8 @@ import React, {useState, useEffect} from 'react';
 import HeroSection from './sections/HeroSection/HeroSection';
 import BentoBox from './sections/BentoBox/BentoBox';
 import PreLoader from '../../components/PreLoader/PreLoader';
-import ProjectSlider from '../../components/ProjectSlider/ProjectSlider';
-
+import ProjectSlider from './sections/ProjectSlider/ProjectSlider';
+import ReviewsSection from './sections/ReviewsSection/ReviewsSection';
 
 const HomePage = () => {
   // loader state
@@ -24,6 +24,7 @@ const HomePage = () => {
     <>
       <HeroSection />
       <BentoBox />
+      <ReviewsSection/>
       <ProjectSlider/> 
   
 
