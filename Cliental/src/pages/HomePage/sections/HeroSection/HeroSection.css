@@ -184,11 +184,11 @@ video{
         padding: 0;
     }
     .text h1,.text span{
-        font-size: 1.7em;
+        font-size: 1em;
         padding: 0;
     }
     
     .text h2{
-        font-size: 1em;
+        font-size: 0.8em;
     }
   }

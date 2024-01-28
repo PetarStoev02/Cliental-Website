@@ -1,0 +1,12 @@
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project-grid .item {
+    flex-basis: calc(50% - 10px); /* Adjust '10px' to change the spacing */
+    margin-bottom: 20px; /* Spacing between rows */
+    
+  }
+  
