@@ -9,21 +9,20 @@
     text-decoration: none;
     max-width: 250px;
     transition: transform 0.3s ease;
-}
-
-.contact-button-wrapper:hover {
-    transform: scale(1.1);
-    background-color: #292929;
-    color: #316B9D;
-}
-
-h1{
     color: #FFFFFF;
     text-align: center;
     font-family: Montserrat;
     font-size: 0.9em;
     font-style: normal;
     font-weight: 600;
+    border: 0;
+}
+
+.contact-button-wrapper:hover {
+    transform: scale(1.1);
+    background-color: #292929;
+    color: #316B9D;
+    color: #FFFFFF;
 }
 
 @media screen and (max-width: 960px) {

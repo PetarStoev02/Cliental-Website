@@ -1,0 +1,8 @@
+
+
+.calendly-inline-widget, .simplebar-content-wrapper {
+    overflow: hidden !important;
+    width: 50%;
+    min-width:320px;
+    height:750px;
+  }

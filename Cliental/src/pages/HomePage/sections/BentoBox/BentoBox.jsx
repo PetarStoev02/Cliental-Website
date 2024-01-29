@@ -2,8 +2,8 @@ import "./BentoBox.css";
 import React from "react";
 import Box from "../../../../components/Box/Box";
 import { SERVICES_TYPES } from "../../../../common/constants";
-import { NavLink } from "react-router-dom";
-import * as ROUTES from "../../../../common/routes";
+import ContactButton from "../../../../components/ContactButton/ContactButton";
+
 
 const BentoBox = () => {
   const services = SERVICES_TYPES;
@@ -19,11 +19,7 @@ const BentoBox = () => {
           </div>
         ))}
       </div>
-      <NavLink style={{ textDecoration: "none" }} to={ROUTES.CONTACTS_PAGE}>
-        <div className="hero-button-wrapper">
-          <p>БЕЗПЛАТНА КОНСУЛТАЦИЯ</p>
-        </div>
-      </NavLink>
+      <ContactButton/>
     </div>
   );
 };

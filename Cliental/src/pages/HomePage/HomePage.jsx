@@ -1,10 +1,11 @@
-import './HomePage.css';
-import React, {useState, useEffect} from 'react';
-import HeroSection from './sections/HeroSection/HeroSection';
-import BentoBox from './sections/BentoBox/BentoBox';
-import PreLoader from '../../components/PreLoader/PreLoader';
-import ProjectSlider from './sections/ProjectSlider/ProjectSlider';
-import ReviewsSection from './sections/ReviewsSection/ReviewsSection';
+import "./HomePage.css";
+import React, { useState, useEffect } from "react";
+import HeroSection from "./sections/HeroSection/HeroSection";
+import BentoBox from "./sections/BentoBox/BentoBox";
+import PreLoader from "../../components/PreLoader/PreLoader";
+import ProjectSlider from "./sections/ProjectSlider/ProjectSlider";
+import ReviewsSection from "./sections/ReviewsSection/ReviewsSection";
+import Calendly from "../../components/Calendly/Calendly";
 
 const HomePage = () => {
   // loader state
@@ -24,10 +25,9 @@ const HomePage = () => {
     <>
       <HeroSection />
       <BentoBox />
-      <ReviewsSection/>
-      <ProjectSlider/> 
-  
-
+      <ReviewsSection />
+      <ProjectSlider />
+      <Calendly />
 
       {isLoading && <PreLoader />}
     </>
