@@ -6,6 +6,7 @@ import PreLoader from "../../components/PreLoader/PreLoader";
 import ProjectSlider from "./sections/ProjectSlider/ProjectSlider";
 import ReviewsSection from "./sections/ReviewsSection/ReviewsSection";
 import Calendly from "../../components/Calendly/Calendly";
+import Footer from "../../components/Footer/Footer";
 
 const HomePage = () => {
   // loader state
@@ -28,7 +29,7 @@ const HomePage = () => {
       <ReviewsSection />
       <ProjectSlider />
       <Calendly />
-
+      <Footer />
       {isLoading && <PreLoader />}
     </>
   );

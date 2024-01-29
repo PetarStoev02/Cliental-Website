@@ -116,6 +116,11 @@
   
   /* Small screens */
   @media (max-width: 700px) {
+    .bento-title{
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
     .bento-box{
       padding: 0;
     }
