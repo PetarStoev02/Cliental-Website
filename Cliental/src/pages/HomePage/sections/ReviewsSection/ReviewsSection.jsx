@@ -11,7 +11,7 @@ import ReviewsCard from "../../../../components/ReviewsCard/ReviewsCard";
 const ReviewsSection = () => {
   return (
     <div className="reviews-wrapper">
-      <div className="revies-heading">НАШИТЕ ДОВОЛНИ<br></br> КЛИЕНТИ </div>
+      <div className="revies-heading">НАШИТЕ ДОВОЛНИ КЛИЕНТИ </div>
       <div className="reviews-slider">
         <Swiper
           slidesPerView={"auto"}

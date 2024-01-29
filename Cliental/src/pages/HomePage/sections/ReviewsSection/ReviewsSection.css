@@ -3,7 +3,7 @@
     height: 100%;
     overflow: hidden;
     margin: 80px 0;
-    padding: 0 50px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,18 +14,19 @@
     position: relative;
     left:60px;
     height: 100%;
-    width: 100%;
+    width: 70%;
 }
 
 .revies-heading{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
     color: #fff;
     font-size: 40px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
  .reviews-swiper .swiper-slide{
@@ -37,7 +38,7 @@
     border-radius: 30px;
   }
 
-  .reviews-swiper .swiper-slide-active{
+  .swiper-slide-active{
     width: 100%;
   }
  

@@ -1,11 +1,22 @@
-.card-wrapper{
-    height: 100%;
-    width: 100%;
+.reviews-card-wrapper{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     gap: 20px;
-    padding: 20px;
-} 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.reviewer-card-name{
+    width: 100%;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.review-card-text{
+    width: 100%;
+    font-size: 18px;
+}
 
