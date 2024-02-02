@@ -13,13 +13,12 @@
 .bento-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     max-width: 1000px;
-
 }
 .bento-title{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -31,7 +30,31 @@
     border-radius: 30px;
     padding: 30px;
     max-height: 610px;
+    box-shadow:
+    -10px -10px 10px #dc53e654,        
+    10px 10px 10px #316B9D;    
+    animation: moveShadow 10s linear infinite;      
+ 
+}
+
+@keyframes moveShadow {
+  0% {
+      box-shadow: -10px -10px 10px #dc53e654, 10px 10px 10px #316B9D;
   }
+  25% {
+      box-shadow: 10px -10px 10px #dc53e654, -10px 10px 10px #316B9D;
+  }
+  50% {
+      box-shadow: -10px -10px 10px #dc53e654, 10px 10px 10px #316B9D;
+  }
+  75% {
+      box-shadow: -10px 10px 10px #dc53e654, 10px -10px 10px #316B9D;
+  }
+  100% {
+      box-shadow: -10px -10px 10px #dc53e654, 10px 10px 10px #316B9D;
+  }
+}
+  
 .bento-box>*:hover{
     transform: scale(1.05);
 }

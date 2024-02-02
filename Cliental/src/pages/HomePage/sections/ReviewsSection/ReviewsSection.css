@@ -48,13 +48,6 @@
     min-width: 400px;
   }
   
-  .reviews-swiper .swiper-slide:nth-child(2n) {
-    width: 60%;
-  }
-  
-  .reviews-swiper .swiper-slide:nth-child(3n) {
-    width: 40%;
-  }
 
   @media (max-width:960px) {
  

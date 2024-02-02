@@ -1,11 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./ProjectSlider.css"
+import "./ProjectSlider.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
 import { PROJECTS } from "../../../../common/constants";
+import { NavLink } from "react-router-dom";
 
 const ProjectSlider = () => {
   const chunkProjects = (projects, size) => {
@@ -33,7 +34,9 @@ const ProjectSlider = () => {
           <SwiperSlide key={index}>
             {chunk.map((project, i) => (
               <div className="item" key={i}>
-                <ProjectCard project={project} />
+                <NavLink style={{ textDecoration: "none" }} target="_blank" to={project.url}>
+                  <ProjectCard project={project} />
+                </NavLink>
               </div>
             ))}
           </SwiperSlide>
