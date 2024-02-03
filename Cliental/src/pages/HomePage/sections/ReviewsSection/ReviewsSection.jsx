@@ -20,8 +20,8 @@ const ReviewsSection = () => {
         >
           {REVIEWS.map((review, i) => (
             <SwiperSlide key={i}>
-              <div className="card" key={i}>
-                <ReviewsCard review={review}/>
+              <div className="card-review" key={i}>
+                <ReviewsCard review={review} />
               </div>
             </SwiperSlide>
           ))}

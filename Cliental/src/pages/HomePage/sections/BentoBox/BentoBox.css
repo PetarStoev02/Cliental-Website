@@ -31,7 +31,7 @@
     padding: 30px;
     max-height: 610px;
     box-shadow:
-    -10px -10px 10px #dc53e654,        
+    -10px -10px 10px #dc53e6a6,        
     10px 10px 10px #316B9D;    
     animation: moveShadow 10s linear infinite;      
  
@@ -39,19 +39,19 @@
 
 @keyframes moveShadow {
   0% {
-      box-shadow: -10px -10px 10px #dc53e654, 10px 10px 10px #316B9D;
+      box-shadow: -10px -10px 10px #dc53e6a6, 10px 10px 10px #316B9D;
   }
   25% {
-      box-shadow: 10px -10px 10px #dc53e654, -10px 10px 10px #316B9D;
+      box-shadow: 10px -10px 10px #dc53e6a6, -10px 10px 10px #316B9D;
   }
   50% {
-      box-shadow: -10px -10px 10px #dc53e654, 10px 10px 10px #316B9D;
+      box-shadow: -10px -10px 10px #dc53e6a6, 10px 10px 10px #316B9D;
   }
   75% {
-      box-shadow: -10px 10px 10px #dc53e654, 10px -10px 10px #316B9D;
+      box-shadow: -10px 10px 10px #dc53e6a6, 10px -10px 10px #316B9D;
   }
   100% {
-      box-shadow: -10px -10px 10px #dc53e654, 10px 10px 10px #316B9D;
+      box-shadow: -10px -10px 10px #dc53e6a6, 10px 10px 10px #316B9D;
   }
 }
   

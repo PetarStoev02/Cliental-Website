@@ -8,6 +8,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    background: linear-gradient(0deg, #151515 0%, #bc48ff42 50%, #151515 100%);
+    backdrop-filter: blur(30px);
+    padding: 100px 0 0 50px;
 }
 
 .reviews-slider{
@@ -32,21 +35,31 @@
  .reviews-swiper .swiper-slide{
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     height: 400px;
     width: 100%;
     border-radius: 30px;
+    color: #fff;
   }
 
   .swiper-slide-active{
     width: 100%;
   }
  
-  .reviews-swiper  .swiper-slide {
+  .reviews-swiper  .swiper-slide{
+    width: 100%;
+    max-width: 550px;
+    min-width: 400px;
+
+  }
+   
+  .reviews-swiper  .swiper-slide>*{
     width: 100%;
     max-width: 550px;
     min-width: 400px;
   }
+
   
 
   @media (max-width:960px) {

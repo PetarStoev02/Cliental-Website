@@ -1,21 +1,53 @@
 .slider-wrapper{
+    position: relative;
     width: 100%;
-    max-width: 1100px;
     height: 100%;
     overflow: hidden;
     margin: 80px 0;
-    padding: 0 50px;
+    padding:50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,#151515 23.5%,#0000 0)33.6px 48px,
+    radial-gradient(circle farthest-side at 0% 50%,#292929 24%,#0000 0)30.4px 48px,
+    linear-gradient(#151515 14%,#0000 0, #0000 85%,#151515 0)0 0,
+    linear-gradient(150deg,#151515 24%,#292929 0,#292929 26%,#0000 0,#0000 74%,#292929 0,#292929 76%,#151515 0)0 0,
+    linear-gradient(30deg,#151515 24%,#292929 0,#292929 26%,#0000 0,#0000 74%,#292929 0,#292929 76%,#151515 0)0 0,
+    linear-gradient(90deg,#292929 2%,#151515 0,#151515 98%,#292929 0%)0 0 #151515;
+    background-size: 64px 96px;
+    background-color:transparent;
 }
+.slider-wrapper::before,
+.slider-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30%; /* Adjust the height as needed */
+}
+
+.slider-wrapper::before {
+    top: -60px;
+    background: linear-gradient(rgba(21, 21, 21, 0) 0%, #151515 15%, #151515 0%, rgba(21, 21, 21, 0) 100%);
+}
+
+.slider-wrapper::after {
+    bottom: -60px;
+    transform: rotateX(180deg);
+    background: linear-gradient(rgba(21, 21, 21, 0) 0%, #151515 15%, #151515 0%, rgba(21, 21, 21, 0) 100%);
+}
+
+
+
 .text{
     color: #fff;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    z-index: 55;
 }
 
 
@@ -24,7 +56,7 @@
     height: 100%;
     display: flex;
     gap: 30px;
-    
+    max-width: 1100px;
 }
 
 .swiper .swiper-slide {
@@ -34,6 +66,8 @@
     justify-content: center;
     align-items: center;
     gap: 20px;  
+    padding: 20px;
+    
     
 }
 
@@ -63,6 +97,7 @@
     text-transform: uppercase;
     margin: 0 0 20px 0;
     color: #fff;
+    z-index: 55;
 }
 
 .swiper-slide .item .card-text {
