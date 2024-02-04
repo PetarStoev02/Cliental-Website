@@ -9,6 +9,7 @@ const BentoBox = () => {
   const services = SERVICES_TYPES;
   return (
     <div className="bento-wrapper">
+       <div id="services"></div>
       <div className="bento-title">
         <h1>НАШИТЕ УМЕНИЯ</h1>
       </div>
@@ -20,6 +21,7 @@ const BentoBox = () => {
         ))}
       </div>
       <ContactButton/>
+      
     </div>
   );
 };

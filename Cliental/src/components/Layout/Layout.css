@@ -9,6 +9,14 @@
     width: 100%;
     margin: 0;
     z-index: -1;
-    background-color:#151515 ;
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,#151515 23.5%,#0000 0)33.6px 48px,
+    radial-gradient(circle farthest-side at 0% 50%,#292929 24%,#0000 0)30.4px 48px,
+    linear-gradient(#151515 14%,#0000 0, #0000 85%,#151515 0)0 0,
+    linear-gradient(150deg,#151515 24%,#292929 0,#292929 26%,#0000 0,#0000 74%,#292929 0,#292929 76%,#151515 0)0 0,
+    linear-gradient(30deg,#151515 24%,#292929 0,#292929 26%,#0000 0,#0000 74%,#292929 0,#292929 76%,#151515 0)0 0,
+    linear-gradient(90deg,#292929 2%,#151515 0,#151515 98%,#292929 0%)0 0 #151515;
+    background-size: 64px 96px;
+    background-color:transparent;
     
 }

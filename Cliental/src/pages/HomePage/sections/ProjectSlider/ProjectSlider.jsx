@@ -22,8 +22,8 @@ const ProjectSlider = () => {
 
   return (
     <div className="slider-wrapper">
+      <div id="portfolio"></div>
       <div className="text">НАШИТЕ ПРОЕКТИ</div>
-
       {/* Non-mobile Swiper */}
       <Swiper
         pagination={{ dynamicBullets: true }}
@@ -34,7 +34,11 @@ const ProjectSlider = () => {
           <SwiperSlide key={index}>
             {chunk.map((project, i) => (
               <div className="item" key={i}>
-                <NavLink style={{ textDecoration: "none" }} target="_blank" to={project.url}>
+                <NavLink
+                  style={{ textDecoration: "none" }}
+                  target="_blank"
+                  to={project.url}
+                >
                   <ProjectCard project={project} />
                 </NavLink>
               </div>

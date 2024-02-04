@@ -8,7 +8,7 @@ import React from 'react';
 const NavButton = ({children, route, buttonColor = '#292929', onClick}) => {
   const match = useMatch(`/${route}`);
   return (
-    <NavLink style={{textDecoration: 'none'}} to={route}>
+    <NavLink style={{textDecoration: 'none'}} to={`/#${route}`}>
       <div
         className={`nav-button ${match ? 'nav-button-active' : ''}`}
         style={{color: match ? undefined : buttonColor}}

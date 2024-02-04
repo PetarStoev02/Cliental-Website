@@ -6,8 +6,9 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    padding: 0 30px;
-    margin: 0 0 80px 0;
+    padding:30px;
+    gap: 30px;
+    background-color: #151515;
 }
 
 .bento-box {
