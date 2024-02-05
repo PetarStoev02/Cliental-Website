@@ -4,6 +4,7 @@ import Logo from "../Logo/Logo";
 import { NavLink } from "react-router-dom";
 import * as ROUTES from "../../common/routes";
 import ContactButton from "../ContactButton/ContactButton";
+import SocialMediaIcons from "../SocialMediaIcons/SocialMediaIcons";
 
 const Footer = () => {
   return (
@@ -37,7 +38,11 @@ const Footer = () => {
           БИСКВИТКИ
         </NavLink>
       </div>
-      <ContactButton />
+      <div className="contacts-footer">
+        <ContactButton />
+        <SocialMediaIcons />
+      </div>
+
       <div className="footer-copyright">Cliental © 2024</div>
     </div>
   );
