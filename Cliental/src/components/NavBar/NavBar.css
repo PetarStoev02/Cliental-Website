@@ -49,7 +49,7 @@
     gap:30px;
     list-style: none;
     text-align: center;
-    z-index: 1;
+    z-index: 56;
 }
   
 .nav-item {
@@ -62,17 +62,58 @@
     display: none;
 }
 
+.nav-contact{
+       
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  height: 50px;
+  background-color: #316B9D;
+  border-radius: 50px;
+  text-decoration: none;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 600;
+  border: 0;
+}
+
+.nav-contact:hover {
+  transform: scale(1.1);
+  background-color: #292929;
+  color: #FFFFFF;
+}
+
+.socialists-active{
+  display: none;
+}
+
 @media screen and (max-width: 960px) {
     .nav-bar{
         margin: 0;
-        position:absolute;
+        position:fixed;
         top:0;
         width: 100%;
-        padding: 0;
+        padding: 10px;
         height: 100px;
         border-radius: 0 0 50px 50px;
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        overflow:visible;
+        height: 100vh;
+        
+    }
+
+    .nav-top-side, .nav-divider{
+      display: none;
     }
    
     .menu-icon {
@@ -90,25 +131,27 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
+        height: 100%;
         position: absolute;
         top: 100px;
         opacity: 1;
-       
         visibility: hidden;
       }
     
       .nav-menu.active {
-        visibility:unset;
+        visibility: unset;
+        height: 70vh;
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
         background: #ffffff;
-        right: 0;
         opacity: 1;
         transition: all 0.5s ease-in-out;
         z-index: 1;
-      }
+       
+    }
+    
     
       .nav-links {
         text-align: center;
@@ -127,4 +170,16 @@
         border-radius: 0;
         transition: all 0.5s ease-in-out;
       }
+
+      .socialists-active{
+        display: flex;
+        gap: 30px;
+        
+      }
+
+      .languish span{
+        font-size: 20px;
+      }
+
+      
 }

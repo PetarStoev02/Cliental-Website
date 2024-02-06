@@ -24,9 +24,3 @@
     color: #316B9D;
     color: #FFFFFF;
 }
-
-@media screen and (max-width: 960px) {
-    .contact-button-wrapper{
-       display: none;
-    }
-}

@@ -13,7 +13,8 @@ import ContactButton from "../../../../components/ContactButton/ContactButton";
 const HeroSection = () => {
   return (
     <div className="hero-wraper">
-      <video src={videoBG} autoPlay loop muted preload="auto" playsInline />
+      <video src={videoBG} type="video/mp4" autoPlay loop muted preload="auto" playsInline />
+
       <div className="content">
         <div className="text">
           <h1>

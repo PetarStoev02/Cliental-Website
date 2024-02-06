@@ -2,9 +2,9 @@ import NavButton from "../NavButton/NavButton";
 import * as ROUTES from "../../common/routes";
 import { SERVICES, PORTFOLIO, CONTACTS } from "../../common/constants";
 import "./NavBar.css";
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import Logo from "../Logo/Logo";
-import ContactButton from "../ContactButton/ContactButton";
+import { PopupButton } from "react-calendly";
 import SocialMediaIcons from "../SocialMediaIcons/SocialMediaIcons";
 
 // eslint-disable-next-line react/prop-types
@@ -13,33 +13,35 @@ const NavBar = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const [show, setShow] = useState(true)
-    const controlNavbar = () => {
-        if (window.scrollY > 100) {
-            setShow(false)
-        } else {
-            setShow(true)
-        }
+  const [show, setShow] = useState(true);
+  const controlNavbar = () => {
+    if (window.scrollY > 100) {
+      setShow(false);
+    } else {
+      setShow(true);
     }
+  };
 
-    useEffect(() => {
-        window.addEventListener('scroll', controlNavbar)
-        return () => {
-            window.removeEventListener('scroll', controlNavbar)
-        }
-    }, [])
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);
+
+  
 
   return (
     <div className={click ? "nav-bar active" : "nav-bar"}>
-      <div className={`${show && 'nav-top-side'}`}>
-        <SocialMediaIcons/>
+      <div className={`${show && "nav-top-side"}`}>
+        <SocialMediaIcons />
         <div className="languish">
           <span>BG</span>
           <span>|</span>
           <span>EN</span>
         </div>
       </div>
-      <div className={`${show && 'nav-divider'}`}></div>
+      <div className={`${show && "nav-divider"}`}></div>
       <div className="nav-bottom-side">
         {" "}
         <Logo onClick={closeMobileMenu} />
@@ -74,8 +76,21 @@ const NavBar = () => {
               {CONTACTS}
             </NavButton>
           </li>
+          <PopupButton
+            className="nav-contact"
+            url="https://calendly.com/cliental"
+            rootElement={document.getElementById("root")}
+            text="ИЗПРАТИ ЗАПИТВАНЕ"
+          />
+          <div className="socialists-active">
+            <SocialMediaIcons />
+            <div className="languish">
+              <span>BG</span>
+              <span>|</span>
+              <span>EN</span>
+            </div>
+          </div>
         </ul>
-        <ContactButton />
       </div>
     </div>
   );

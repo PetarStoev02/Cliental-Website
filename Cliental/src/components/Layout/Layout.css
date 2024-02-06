@@ -18,5 +18,5 @@
     linear-gradient(90deg,#292929 2%,#151515 0,#151515 98%,#292929 0%)0 0 #151515;
     background-size: 64px 96px;
     background-color:transparent;
-    
+    overflow: hidden;
 }
