@@ -3,29 +3,38 @@ export const PORTFOLIO = "ПОРТФОЛИО";
 export const CONTACTS = "КОНТАКТИ";
 export const SEND_REQUEST = "ИЗПРАТИ ЗАПИТВАНЕ";
 
+
+import SocialMedia from "../assets/social-media-box.png";
+import GraphicDesign from "../assets/graphic-design-box.png";
+import Photography from "../assets/photography-box.png";
+import WebSeo from "../assets/web-seo-box.png";
 export const SERVICES_TYPES = [
   {
     id: 1,
     route: "digital-marketing-services",
     name: "Дигитален маркетинг",
-    imageUrl: "https://prod.spline.design/5mv7Wum7EJDM9YYS/scene.splinecode",
+    // imageUrl: "https://prod.spline.design/5mv7Wum7EJDM9YYS/scene.splinecode",
+    imageUrl: `${SocialMedia}`,
   },
   {
     id: 2,
     name: "Професионална фотография ",
     route: "photography-services",
-    imageUrl: "https://prod.spline.design/LepBWpXFYOLtWgZg/scene.splinecode",
+    // imageUrl: "https://prod.spline.design/LepBWpXFYOLtWgZg/scene.splinecode",
+    imageUrl: `${Photography}`,
   },
   {
     id: 3,
     name: "Уебсайт и SEO",
     route: "website-services",
-    imageUrl: "https://prod.spline.design/AUtuMg1EDPdSsCji/scene.splinecode",
+    // imageUrl: "https://prod.spline.design/AUtuMg1EDPdSsCji/scene.splinecode",
+    imageUrl: `${WebSeo}`,
   },
   {
     id: 4,
     name: "Графичен дизайн",
-    imageUrl: "https://prod.spline.design/HCXnHetUKAatlWGW/scene.splinecode",
+    // imageUrl: "https://prod.spline.design/HCXnHetUKAatlWGW/scene.splinecode",
+    imageUrl: `${GraphicDesign}`,
   },
 ];
 

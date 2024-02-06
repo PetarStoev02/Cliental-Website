@@ -13,8 +13,8 @@ const App = () => {
   return (
     <>
       <ScrollToAnchor />
-      <NavBar />
       <Layout>
+        <NavBar />
         <Suspense fallback={<div>Loading</div>}>
           <Routes>
             <Route path={ROUTES.HOME_PAGE} element={<HomePage />} />

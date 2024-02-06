@@ -36,5 +36,24 @@
     z-index:1;
 }
 
+.box-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    scale: 2;
+}
 
+@media (max-width:960px) {
+    .box-img {
+     
+        max-width: 300px;
+       
+    }
 
+    .box-wrapper{
+        align-items: center;
+        justify-content: center;
+     
+    }
+    
+    }

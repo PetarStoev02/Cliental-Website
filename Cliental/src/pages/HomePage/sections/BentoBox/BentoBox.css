@@ -1,10 +1,11 @@
 .bento-wrapper{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
     gap: 20px;
     padding:30px;
     gap: 30px;
@@ -17,6 +18,7 @@
     gap: 20px;
     padding: 10px;
     max-width: 1000px;
+    
 }
 .bento-title{
   font-size: 20px;
@@ -100,6 +102,7 @@
   .bento-wrapper{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
   .grid-item {
     height: 300px;
