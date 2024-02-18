@@ -6,15 +6,15 @@ import Logo3 from "../../../../assets/Logo 3.jpg";
 import Logo4 from "../../../../assets/Logo 4.jpg";
 import Logo5 from "../../../../assets/Logo 5.png";
 import Logo6 from "../../../../assets/Logo 6.png";
-
 import videoBG from "../../../../assets/videoBg.mp4";
 import ContactButton from "../../../../components/ContactButton/ContactButton";
+import AutoPlaySilentVideo from "../../../../components/AutoPlaySilentVideo/AutoPlaySilentVideo";
 
 const HeroSection = () => {
   return (
     <div className="hero-wraper">
-      <video src={videoBG} type="video/mp4" autoPlay loop muted preload="auto" playsInline />
-
+      {/* <video src={videoBG} type="video/mp4" autoPlay loop muted preload="auto" playsInline /> */}
+      <AutoPlaySilentVideo className="video-bg" video={videoBG} />
       <div className="content">
         <div className="text">
           <h1>

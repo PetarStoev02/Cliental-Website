@@ -4,7 +4,6 @@ import { lazy, Suspense } from "react";
 import React from "react";
 
 import Layout from "./components/Layout/Layout";
-
 import ScrollToAnchor from "./helper/ScrollToAnchor";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -14,7 +13,6 @@ const App = () => {
     <>
       <ScrollToAnchor />
       <Layout>
-        
         <Suspense fallback={<div>Loading</div>}>
           <Routes>
             <Route path={ROUTES.HOME_PAGE} element={<HomePage />} />

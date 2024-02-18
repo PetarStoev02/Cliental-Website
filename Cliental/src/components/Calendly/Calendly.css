@@ -1,4 +1,8 @@
-
+#contacts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .calendly-inline-widget, .simplebar-content-wrapper {
     overflow: hidden !important;

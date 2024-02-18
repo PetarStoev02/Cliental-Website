@@ -5,8 +5,7 @@ import { InlineWidget } from "react-calendly";
 const Calendly = () => {
   return (
     <>
-      <div id="contacts"></div>
-      <InlineWidget url="https://calendly.com/cliental" />;
+          <InlineWidget url="https://calendly.com/cliental" />;
     </>
   );
 };
