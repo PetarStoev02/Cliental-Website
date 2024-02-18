@@ -35,11 +35,11 @@ const NavBar = () => {
     <div className={click ? "nav-bar active" : "nav-bar"}>
       <div className={`${show && "nav-top-side"}`}>
         <SocialMediaIcons />
-        <div className="languish">
+        {/* <div className="languish">
           <span>BG</span>
           <span>|</span>
           <span>EN</span>
-        </div>
+        </div> */}
       </div>
       <div className={`${show && "nav-divider"}`}></div>
       <div className="nav-bottom-side">
@@ -84,11 +84,11 @@ const NavBar = () => {
           />
           <div className="socialists-active">
             <SocialMediaIcons />
-            <div className="languish">
+            {/* <div className="languish">
               <span>BG</span>
               <span>|</span>
               <span>EN</span>
-            </div>
+            </div> */}
           </div>
         </ul>
       </div>
