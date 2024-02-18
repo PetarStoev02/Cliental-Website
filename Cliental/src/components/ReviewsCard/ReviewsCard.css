@@ -33,3 +33,21 @@
     right: 20px;
     transform: scale(-1,1);
 }
+
+@media (max-width: 520px) {
+    .reviews-card-wrapper{
+        gap: 20px;
+        padding: 10px;
+    }
+    .reviewer-card-name{
+        width: 50%;
+        font-size: 25px;
+        font-weight:bold;
+    }
+    
+    .review-card-text{
+        width: 50%;
+        max-width: 300px;
+        font-size: 14px;
+    }
+  }

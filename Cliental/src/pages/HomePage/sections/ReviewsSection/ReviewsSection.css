@@ -97,13 +97,12 @@
     .reviews-wrapper{
         flex-direction: column;
         width: 100%;
-        
-        padding: 0 20px;
+        padding:20px 10px;
     }
 
     .revies-heading{
         justify-content: center;
-        font-size: 30px;
+        font-size: 25px;
         width: 100%;
     }
 
@@ -111,12 +110,13 @@
         position: relative;
         left:0px;
         height: 100%;
-        width: 100%;
+        width: 80%;
+      
     }
 
     .reviews-swiper .swiper-slide {
         width: 100%;
-        max-width: 550px;
+
         min-width: 0; 
     }
     .reviews-swiper .swiper-slide-active{
@@ -128,5 +128,16 @@
       
       .reviews-swiper .swiper-slide:nth-child(3n) {
         width: 100%;
+      }
+
+      .reviews-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10%; /* Adjust the height as needed */
+        background: linear-gradient(to top, rgba(0,0,0,0) 0%, #151515 100%);
+        pointer-events: none; /* Ensures clicks pass through the overlay */
       }
   }

@@ -10,7 +10,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-
 }
 /* .slider-wrapper::before,
 .slider-wrapper::after {
@@ -145,6 +144,12 @@
     }
     .swiper-slide .item {
         padding: 20px 30px;
+    }
+
+    .slider-wrapper{
+        margin: 10px 0;
+        padding:  20px;
+
     }
 
 }
