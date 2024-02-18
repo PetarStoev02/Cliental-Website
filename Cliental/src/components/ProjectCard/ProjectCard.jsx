@@ -1,8 +1,7 @@
 import React from "react";
 import "./ProjectCard.css";
-import { NavLink } from "react-router-dom";
 
-const ProjectCard = ({ project: { title, img, text, url } }) => {
+const ProjectCard = ({ project: { title, img, text} }) => {
   return (
     <div className="card-wrapper">
       <div className="title">{title}</div>

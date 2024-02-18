@@ -3,11 +3,19 @@ export const PORTFOLIO = "ПОРТФОЛИО";
 export const CONTACTS = "КОНТАКТИ";
 export const SEND_REQUEST = "ИЗПРАТИ ЗАПИТВАНЕ";
 
-
 import SocialMedia from "../assets/social-media-box.png";
 import GraphicDesign from "../assets/graphic-design-box.png";
 import Photography from "../assets/photography-box.png";
 import WebSeo from "../assets/web-seo-box.png";
+
+import logo_1 from "../assets/Logo 3.jpg";
+import logo_2 from "../assets/Logo 1.png";
+import logo_3 from "../assets/Logo 5.png";
+import logo_4 from "../assets/Logo 6.png";
+import logo_5 from "../assets/Logo 2.png";
+import logo_6 from "../assets/Logo 4.jpg";
+import logo_7 from "../assets/Logo 7.png";
+import logo_8 from "../assets/Logo 8.png";
 export const SERVICES_TYPES = [
   {
     id: 1,
@@ -41,66 +49,59 @@ export const SERVICES_TYPES = [
 export const PROJECTS = [
   {
     title: "Зоологическа градина София",
-    img: "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/355307824_706801131250834_2406581722640009825_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=VytM1N5y4d0AX95sm6z&_nc_ht=scontent.fsof8-1.fna&oh=00_AfCmH50XdGoAegIMQWhIOEr3TXVsJaqwrHs-i7dW0N7W4A&oe=65C17DDA",
-    text: "119K views · 5K reactions | Промо видео",
+    img: `${logo_1}`,
+    // text: "119K views · 5K reactions | Промо видео",
     url: "https://www.facebook.com/zoosf/videos/2893565540780532",
   },
   {
     title: "Soyora Furniture | Sofia",
-    img: "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/306272297_582642256981565_3698366447336812614_n.png?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=QsWIdBIrnWIAX-sysGm&_nc_ht=scontent.fsof8-1.fna&oh=00_AfA-mOX5PTYJvZ40G6uHYJ90O0yk0-LaPgrCifEvLha4jA&oe=65BFB395",
-    text: "Soyora Furniture · 737 likes | Промо видео",
+    img: `${logo_2}`,
+    // text: "Soyora Furniture · 737 likes | Промо видео",
     url: "https://www.facebook.com/soyora.furniture",
   },
   {
     title: "Мария Ранчинска Youtube",
-    img: "https://yt3.googleusercontent.com/lBXp_M4W_fyCbT0QG2NroWWvLNDNCZOZ9kKSp9boQNRk_HaTHqXRTeyL66jyplWlVfsc7ELUXQ=s176-c-k-c0x00ffffff-no-rj",
-    text: "26 видеоклипа",
+    img: `${logo_3}`,
+    // text: "26 видеоклипа",
     url: "https://www.youtube.com/@mariaranchinska/videos",
   },
   {
-    title: "Мария Ранчинска TikTok",
-    img: "https://yt3.googleusercontent.com/lBXp_M4W_fyCbT0QG2NroWWvLNDNCZOZ9kKSp9boQNRk_HaTHqXRTeyL66jyplWlVfsc7ELUXQ=s176-c-k-c0x00ffffff-no-rj",
-    text: "21.7k Followers, 170.5k Likes",
-    url: "https://www.tiktok.com/@mariaranchinska",
+    title: "Red Zone VR Racing Lounge | TikTok",
+    img: `${logo_7}`,
+    // text: "7198 likes, 90 comments | Промо видео",
+    url: "https://www.tiktok.com/@redzonebg/video/7242378185789164826",
   },
   {
     title: "Tanya VS YouTube",
-    img: "https://yt3.googleusercontent.com/mo1pZA-V-0n7oJG9YT8IdwvRZUnnNOn-B7YMGwopKk1RukgeZKHBo-Z8KmoOOPj0Ad5qxNpehw=s176-c-k-c0x00ffffff-no-rj",
-    text: "32 видеоклипа",
+    img: `${logo_4}`,
+    // text: "32 видеоклипа",
     url: "https://www.facebook.com/zoosf/videos/2893565540780532",
   },
   {
     title: "Comobg",
-    img: "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/326329584_546256474113742_1795795629942095212_n.png?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=uzlHpM_bRpQAX_SJiak&_nc_ht=scontent.fsof8-1.fna&oh=00_AfDFv2-zU3MSrcEpE78j2SpX_4SU0STn5nFSxK3-2nXCfw&oe=65C04DF7",
-    text: "119K views · 5K reactions | Промо видео",
+    img: `${logo_5}`,
+    // text: "119K views · 5K reactions | Промо видео",
     url: "https://www.instagram.com/p/CxUnDzFoap-/",
   },
   {
-    title: "Red Zone VR Racing Lounge | TikTok",
-    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fredzone.bg%2Fbooking%2F&psig=AOvVaw2QH_BqgOHowkX9KPLhGLwh&ust=1706988342619000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCak6CxjYQDFQAAAAAdAAAAABAJ",
-    text: "7198 likes, 90 comments | Промо видео",
-    url: "https://www.tiktok.com/@redzonebg/video/7242378185789164826",
-  },
-  {
     title: "БРЪСНАРНИЦАТЪ | TikTok",
-    img: "",
-    text: "7198 likes, 90 comments | Промо видео",
+    img: `${logo_6}`,
+    // text: "7198 likes, 90 comments | Промо видео",
     url: "https://www.tiktok.com/@brasnarnicataml1",
   },
   {
+    title: "Мария Ранчинска TikTok",
+    img: `${logo_3}`,
+    // text: "21.7k Followers, 170.5k Likes",
+    url: "https://www.tiktok.com/@mariaranchinska",
+  },
+
+  {
     title: "HOMEAROMAGIFTS | TikTok",
-    img: "",
-    text: "7198 likes, 90 comments | Промо видео",
+    img: `${logo_8}`,
+    // text: "7198 likes, 90 comments | Промо видео",
     url: "https://www.tiktok.com/@homearomagifts",
   },
-  ,
-  {
-    title: "Mbodymend | TikTok",
-    img: "",
-    text: "7198 likes, 90 comments | Промо видео",
-    url: "https://www.tiktok.com/@mbodymend/video/7311232261213424928",
-  },
-  
 ];
 
 export const REVIEWS = [
@@ -121,8 +122,13 @@ export const REVIEWS = [
   },
   {
     img: "",
-    title: "Homearomagifts",
-    text: "Личи си професионализмът и старанието, с което правят всичко! Намериха най-добрите решения за нашите проблеми!",
+    title: "Мария Ранчинска",
+    text: "С вашата помощ достигнах до толкова много хора и развих страниците си. Благодаря и с нетърпение очаквам следващия ни проект!",
+  },
+  {
+    img: "",
+    title: "Таня Савова",
+    text: `Благодаря за твоята подкрепа и помощ през тази година. Думата "Благодаря" никога няма да е достатъчна, за да изразя благодарността си към теб и целия екип на CLIENTAL`,
   },
 ];
 
