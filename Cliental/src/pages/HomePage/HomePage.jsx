@@ -7,6 +7,7 @@ import ProjectSlider from "./sections/ProjectSlider/ProjectSlider";
 import ReviewsSection from "./sections/ReviewsSection/ReviewsSection";
 import Calendly from "../../components/Calendly/Calendly";
 import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
 
 const HomePage = () => {
   // loader state
@@ -24,6 +25,7 @@ const HomePage = () => {
   }, []);
   return (
     <>
+      <NavBar />
       <HeroSection />
       <BentoBox />
       <ReviewsSection />
