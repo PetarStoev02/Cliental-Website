@@ -8,7 +8,7 @@
     max-width: 100%;
     width: 100%;
     margin: 0;
-    z-index: -1;
+    z-index: 1;
     background:
     radial-gradient(circle farthest-side at 0% 50%,#151515 23.5%,#0000 0)33.6px 48px,
     radial-gradient(circle farthest-side at 0% 50%,#292929 24%,#0000 0)30.4px 48px,
