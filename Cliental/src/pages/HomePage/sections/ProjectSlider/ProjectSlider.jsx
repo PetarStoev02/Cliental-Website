@@ -33,15 +33,15 @@ const ProjectSlider = () => {
         {projectChunks.map((chunk, index) => (
           <SwiperSlide key={index}>
             {chunk.map((project, i) => (
-              <div className="item" key={i}>
-                <NavLink
-                  style={{ textDecoration: "none" }}
-                  target="_blank"
-                  to={project.url}
-                >
+              <NavLink
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                to={project.url}
+              >
+                <div className="item" key={i}>
                   <ProjectCard project={project} />
-                </NavLink>
-              </div>
+                </div>
+              </NavLink>
             ))}
           </SwiperSlide>
         ))}
@@ -56,9 +56,15 @@ const ProjectSlider = () => {
         {projectChunksMobile.map((chunk, index) => (
           <SwiperSlide key={index}>
             {chunk.map((project, i) => (
-              <div className="item" key={i}>
-                <ProjectCard project={project} />
-              </div>
+             <NavLink
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                to={project.url}
+              >
+                <div className="item" key={i}>
+                  <ProjectCard project={project} />
+                </div>
+              </NavLink>
             ))}
           </SwiperSlide>
         ))}
