@@ -1,13 +1,11 @@
-
 .faq-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
     color: #fff;
+    padding: 100px 0
 }
-
   .accordion {
     display: flex;
     flex-direction: row;
@@ -17,31 +15,52 @@
     gap: 10px;
   }
   
-  .item {
+  .item { 
     width: 50%;
-    background: #fff;
+    background: #292929;
     margin-bottom: 5px;
     padding: 10px 20px;
-
   }
   
   .title {
-    color: #292929;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
   }
   
-  .content {
+  .content-faq {
+    position: relative;
+    padding: 0;
     margin: 10px 0;
-    color: #292929;
+    color: #fff;
     max-height: 0;
     overflow: hidden;
+    max-height: 0;
     transition: all 0.5s cubic-bezier(0, 1, 0, 1);
   }
-  .content.show {
-    height: auto;
-    max-height: 9999px;
+  .content-faq.show {
+    display: block;
+    max-height: 999px;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
   }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; /* Adjust this value to control the gap between list items */
+  }
+
+  
+
+    /* Small screens */
+    @media (max-width: 700px) {
+
+      .item {
+        width: 90%;
+      }
+    }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./ProjectSlider.css";
 import "swiper/css";
@@ -19,32 +19,40 @@ const ProjectSlider = () => {
 
   const projectChunks = chunkProjects(PROJECTS, 4);
   const projectChunksMobile = chunkProjects(PROJECTS, 1);
-
+  const [itemId, setItemId] = useState(1);
   return (
     <div className="slider-wrapper">
       <div id="portfolio"></div>
       <div className="text">НАШИТЕ ПРОЕКТИ</div>
+
       {/* Non-mobile Swiper */}
       <Swiper
         pagination={{ dynamicBullets: true }}
         modules={[Pagination]}
         className="mySwiper non-mobile-swiper"
       >
-        {projectChunks.map((chunk, index) => (
-          <SwiperSlide key={index}>
-            {chunk.map((project, i) => (
-              <NavLink
-                style={{ textDecoration: "none" }}
-                target="_blank"
-                to={project.url}
-              >
-                <div className="item" key={i}>
-                  <ProjectCard project={project} />
-                </div>
-              </NavLink>
-            ))}
-          </SwiperSlide>
-        ))}
+        {projectChunks.map((chunk, index) => {
+
+          return (
+            <SwiperSlide key={index}>
+              {chunk.map((project, i) => {
+                const uniqueKey = itemId + i;
+                return (
+                  <NavLink
+                    key={uniqueKey}
+                    style={{ textDecoration: "none" }}
+                    target="_blank"
+                    to={project.url}
+                  >
+                    <div className="item">
+                      <ProjectCard project={project} />
+                    </div>
+                  </NavLink>
+                );
+              })}
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
 
       {/* Mobile Swiper */}
@@ -56,12 +64,13 @@ const ProjectSlider = () => {
         {projectChunksMobile.map((chunk, index) => (
           <SwiperSlide key={index}>
             {chunk.map((project, i) => (
-             <NavLink
+              <NavLink
+                key={project.id} // Add a unique key here
                 style={{ textDecoration: "none" }}
                 target="_blank"
                 to={project.url}
               >
-                <div className="item" key={i}>
+                <div key={i} className="item">
                   <ProjectCard project={project} />
                 </div>
               </NavLink>

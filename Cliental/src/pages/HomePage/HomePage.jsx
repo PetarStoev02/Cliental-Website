@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy } from "react";
 import HeroSection from "./sections/HeroSection/HeroSection";
 import BentoBox from "./sections/BentoBox/BentoBox";
 import PreLoader from "../../components/PreLoader/PreLoader";
@@ -8,6 +8,9 @@ import ReviewsSection from "./sections/ReviewsSection/ReviewsSection";
 import Calendly from "../../components/Calendly/Calendly";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
+import FAQ from "../../components/FAQ/FAQ";
+
+
 
 const HomePage = () => {
   // loader state
@@ -31,6 +34,7 @@ const HomePage = () => {
       <ReviewsSection />
       <ProjectSlider />
       <Calendly />
+      <FAQ />
       <Footer />
       {isLoading && <PreLoader />}
     </>

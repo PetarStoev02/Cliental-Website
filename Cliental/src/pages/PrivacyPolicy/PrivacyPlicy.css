@@ -1,0 +1,8 @@
+.privacy-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100vw;
+    padding: 50px;
+}

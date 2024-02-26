@@ -14,11 +14,11 @@ const ReviewsCard = ({ review: { img, title, text } }) => {
           version="1.1"
           id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
           width="50px"
           height="50px"
           viewBox="0 0 349.078 349.078"
-          xml:space="preserve"
+          xmlSpace="preserve"
         >
           <g>
             <path
@@ -40,11 +40,11 @@ const ReviewsCard = ({ review: { img, title, text } }) => {
           version="1.1"
           id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
           width="50px"
           height="50px"
           viewBox="0 0 349.078 349.078"
-          xml:space="preserve"
+          xmlSpace="preserve"
         >
           <g>
             <path
